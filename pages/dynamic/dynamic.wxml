@@ -1,0 +1,15 @@
+<!--pages/dynamic/dynamic.wxml-->
+<import src='../../pages/dynamic/item.wxml'/>
+<view>
+
+<block wx:for='{{dataList}}' wx:for-item="dataItem">
+  <template is='adapterItem' data='{{...dataItem}}'></template>
+</block>
+
+
+
+
+
+
+
+</view>

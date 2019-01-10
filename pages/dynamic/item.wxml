@@ -1,0 +1,33 @@
+<template name='adapterItem'>
+  <view class='dynamic_item'>
+    <view class='dynamic_item_title'>
+      <image src='{{src}}' class='dynamic_item_image'></image>
+      <text id='tv_title_name'>{{name}}</text>
+      <text id='tv_title_time'>{{time}}</text>
+    </view>
+    <text id='tv_content'>{{content}}</text>
+
+
+    <view class='contentImage'>
+      <view class='contentImageItem' wx:for='{{contentSrc}}' wx:fpr-item='{{item}}'>
+        <image class='contentImageItemPhoto' src='{{item}}' mode='aspectFill'></image>
+      </view>
+    </view>
+  </view>
+
+  <view class='footer'>
+    <view class='line'></view>
+    <view class='footer-item'>
+      <image class='footerImage' src='../../image/share.png'></image>
+      <text class='footerNums'>{{shareNum}}</text>
+    </view>
+    <view class='footer-item'>
+      <image class='footerImage' src='../../image/like.png'></image>
+      <text class='footerNums'>{{likeNum}}</text>
+    </view>
+    <view class='footer-item'>
+      <image class='footerImage' src='../../image/fabulous.png'></image>
+      <text class='footerNums'>{{fabulousNum}}</text>
+    </view>
+  </view>
+</template>
